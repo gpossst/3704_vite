@@ -8,7 +8,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const submit = async () => {
-    const url = "http://127.0.0.1:5000/login";
+    const url = "https://three704-flask.onrender.com/login";
     try {
       const response = await fetch(url, {
         method: "POST",

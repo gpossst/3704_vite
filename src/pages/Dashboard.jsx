@@ -70,7 +70,7 @@ export default function Dashboard() {
 
   const getData = async () => {
     const userEmail = getCookie("user-email");
-    const url = "http://127.0.0.1:5000/dashboard";
+    const url = "https://three704-flask.onrender.com/dashboard";
     try {
       console.log(userEmail);
       const response = await fetch(url, {
@@ -102,7 +102,7 @@ export default function Dashboard() {
 
   const handleSubmitCalories = async () => {
     const userEmail = getCookie("user-email");
-    const url = "http://127.0.0.1:5000/track";
+    const url = "https://three704-flask.onrender.com/track";
     try {
       console.log(userEmail);
       await fetch(url, {
